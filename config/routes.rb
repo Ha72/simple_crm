@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   
   root to: "customers#index"
   
-  get "/alphabetized", to: "customers#alphabetized"
+  get "/customers/alphabetized", to: "customers#alphabetized"
   
-  get "/missingemail", to: "customers#missing_email"
+  get "/customers/missing_email", to: "customers#missing_email"
   
 end
