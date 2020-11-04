@@ -1,12 +1,12 @@
-<h2 class="title is-2">All Customers</h2>
+<h2 class="title is-2">All Customers Ordered By Name</h2>
 
 <div class="columns is-multiline is-centered is-variable is-8">
-    <% @customers.each do |customer| %>
+    <% @ordered_customers.each do |customer| %>
         <%= render partial: 'customer', object: customer %>
     <% end %>
 </div>
 
 <div class="mt-6 ml-5">
-    <p class="title is-6"><%= link_to "🐰 All customers ordered by name", alphabetized_path %></p>
+    <p class="title is-6"><%= link_to "🐰 All customers", root_path %></p>
     <p class="title is-6"><%= link_to "🐶 All customers missing email address", missingemail_path %></p>
 </div>
