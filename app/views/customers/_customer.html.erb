@@ -5,10 +5,10 @@
             <%= customer.name %>
         </p>
 
-        <% if customer.image.present? %>
+        <% if customer.image_file.present? %>
             <div class="ml-5">
                 <figure class="image">
-                    <%= image_tag customer.image %>
+                    <%= image_tag customer.image_file %>
                 </figure> 
             </div>
         <% end %>
